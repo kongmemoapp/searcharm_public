@@ -9,6 +9,10 @@ This is a **binary distribution repository**, not a source code repository. The 
 - `JobCuveOneClick.exe` — a compiled Windows application (~88 MB, ProductVersion 2.0.0). The version metadata embeds a commit hash from a separate (private) source repository where the application is actually built.
 - `JobCuveOneClick-2.0.0-arm64.dmg` — the macOS build (~42 MB, Apple Silicon only). Ad-hoc signed, not notarized, so users must allow it once via System Settings → Privacy & Security. Built from the same source repository.
 
+Release `whoscall-v12.0` (separate tag namespace, `whoscall-v<versionName>`) holds the Android app:
+
+- `whoscall-v12.0.apk` — 잡큐브 후즈콜 (Android caller-ID app, package `com.devroid.whoscall`, ~6 MB). Release-signed; built from the private `jobcuve-whoscall` repository. Do not reuse plain `vX.Y.Z` tags for it — those belong to JobCuveOneClick.
+
 There is no source code, build system, test suite, or linter here. There is nothing to build or run in a development sense.
 
 ## Working in this repository
